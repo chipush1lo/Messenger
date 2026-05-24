@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.client.LoginController"
+      stylesheets="@login_style.css"
+      styleClass="main-container"
+      alignment="CENTER" spacing="30">
+
+    <padding>
+        <Insets top="40" right="50" bottom="40" left="50"/>
+    </padding>
+
+    <GridPane hgap="20" vgap="20" alignment="CENTER">
+        <Label text="IP-адреса сервера:" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="form-label"/>
+        <TextField fx:id="ipField" text="127.0.0.1" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="form-input"/>
+
+        <Label text="User name:" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="form-label"/>
+        <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="form-input"/>
+    </GridPane>
+
+    <Label fx:id="errorLabel" textFill="red" styleClass="error-label"/>
+
+    <HBox spacing="15" alignment="BOTTOM_RIGHT">
+        <Button fx:id="cancelBtn" text="СКАСУВАТИ" onAction="#onCancelAction" styleClass="cancel-btn"/>
+        <Button fx:id="nextBtn" text="ДАЛІ" onAction="#onNextAction" styleClass="next-btn"/>
+    </HBox>
+
+</VBox>

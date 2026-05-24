@@ -1,0 +1,171 @@
+.main-container {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-background-color: white;
+}
+
+/* Chat Area */
+.chat-area {
+    -fx-background-color: white;
+}
+
+.chat-scroll {
+    -fx-background-color: transparent;
+    -fx-background: white;
+    -fx-border-color: transparent;
+}
+.chat-scroll:focused {
+    -fx-background-color: transparent;
+}
+
+.input-area {
+    -fx-background-color: white;
+}
+
+.reply-box {
+    -fx-background-color: #f0f8ff;
+    -fx-padding: 10px;
+    -fx-border-color: #d0eff5;
+    -fx-border-width: 1 0 0 0;
+}
+
+.cancel-reply-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #999999;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.cancel-reply-btn:hover {
+    -fx-text-fill: red;
+}
+
+.attach-btn {
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-cursor: hand;
+}
+.attach-btn:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 50%;
+}
+
+.msg-input {
+    -fx-background-color: #d0eff5;
+    -fx-background-radius: 20;
+    -fx-padding: 10px 15px;
+    -fx-font-size: 13px;
+}
+
+.send-btn {
+    -fx-background-color: #d0eff5;
+    -fx-text-fill: #555555;
+    -fx-background-radius: 20;
+    -fx-padding: 8px 20px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.send-btn:hover {
+    -fx-background-color: #b5dde5;
+}
+
+/* Messages */
+.msg-box {
+    -fx-padding: 5px;
+}
+
+.msg-name {
+    -fx-text-fill: #b3b3b3;
+    -fx-font-size: 11px;
+    -fx-padding: 0 5px 2px 5px;
+}
+
+.msg-content {
+    -fx-padding: 10px 15px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #333333;
+}
+
+.msg-content-other {
+    -fx-background-color: #d0eff5;
+    -fx-background-radius: 0 15 15 15;
+}
+
+.msg-content-me {
+    -fx-background-color: #f7d692;
+    -fx-background-radius: 15 0 15 15;
+}
+
+.msg-me {
+    -fx-alignment: center-right;
+}
+
+.msg-other {
+    -fx-alignment: center-left;
+}
+
+.reply-quote {
+    -fx-font-style: italic;
+    -fx-text-fill: #666666;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 0 0 3;
+    -fx-padding: 2px 0 2px 8px;
+    -fx-margin: 0 0 5px 0;
+    -fx-font-size: 11px;
+}
+
+.file-download-btn {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-padding: 5px 10px;
+    -fx-cursor: hand;
+}
+.file-download-btn:hover {
+    -fx-background-color: #45a049;
+}
+
+
+/* Right Panel */
+.right-panel {
+    -fx-background-color: #f4f4f4;
+    -fx-border-width: 0 0 0 1;
+    -fx-border-color: #e0e0e0;
+}
+
+.user-header {
+    -fx-background-color: #b5dde5;
+    -fx-padding: 20px;
+}
+
+.user-name-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.search-bar {
+    -fx-background-color: #d0eff5;
+    -fx-background-radius: 5;
+    -fx-padding: 8px;
+    -fx-text-fill: #333333;
+}
+
+.user-list {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #f4f4f4;
+    -fx-border-width: 0;
+}
+
+.user-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #555;
+    -fx-padding: 12px 15px;
+    -fx-font-weight: bold;
+}
+
+.user-list .list-cell:filled:selected {
+    -fx-background-color: #b5dde5;
+    -fx-text-fill: #333333;
+}
+.user-list .list-cell:filled:hover {
+    -fx-background-color: #e0e0e0;
+}

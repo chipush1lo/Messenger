@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.server.ServerController"
+      stylesheets="@server_style.css"
+      styleClass="main-container">
+
+    <TextArea fx:id="logArea" HBox.hgrow="ALWAYS" editable="false" styleClass="log-area" wrapText="true"/>
+
+    <VBox prefWidth="250" styleClass="right-panel">
+        <Label text="LIST OF CONVERSATIONS:" styleClass="header-label"/>
+        <ListView fx:id="usersListView" VBox.vgrow="ALWAYS" styleClass="user-list"/>
+    </VBox>
+
+</HBox>

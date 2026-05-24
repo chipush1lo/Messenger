@@ -1,0 +1,41 @@
+.main-container {
+    -fx-background-color: #2b2b2b;
+}
+
+.log-area {
+    -fx-control-inner-background: #2b2b2b;
+    -fx-text-fill: #e0e0e0;
+    -fx-font-family: 'Consolas', monospace;
+    -fx-font-size: 14px;
+    -fx-border-width: 0;
+}
+.log-area .content {
+    -fx-background-color: #2b2b2b;
+}
+
+.right-panel {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 10px;
+}
+
+.header-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+    -fx-padding: 5px 0 10px 0;
+}
+
+.user-list {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #f4f4f4;
+    -fx-border-width: 0;
+}
+.user-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+    -fx-padding: 8px;
+    -fx-font-size: 13px;
+}
+.user-list .list-cell:filled:selected {
+    -fx-background-color: #e0e0e0;
+}

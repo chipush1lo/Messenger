@@ -1,0 +1,49 @@
+.main-container {
+    -fx-background-color: white;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-label {
+    -fx-text-fill: #808080;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.form-input {
+    -fx-background-color: #d0eff5;
+    -fx-background-radius: 20;
+    -fx-padding: 8px 15px;
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.cancel-btn {
+    -fx-background-color: #e0e0e0;
+    -fx-text-fill: #808080;
+    -fx-background-radius: 20;
+    -fx-padding: 8px 20px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.next-btn {
+    -fx-background-color: #f7d692;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-padding: 8px 25px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.cancel-btn:hover {
+    -fx-background-color: #cccccc;
+}
+
+.next-btn:hover {
+    -fx-background-color: #e5c380;
+}
+
+.error-label {
+    -fx-font-size: 12px;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.client.ChatController"
+            stylesheets="@chat_style.css"
+            styleClass="main-container"
+            prefWidth="800" prefHeight="600">
+
+    <center>
+        <VBox styleClass="chat-area">
+            <ScrollPane fx:id="chatScrollPane" VBox.vgrow="ALWAYS" fitToWidth="true" styleClass="chat-scroll">
+                <VBox fx:id="chatContainer" spacing="10">
+                    <padding>
+                        <Insets top="15" right="15" bottom="15" left="15"/>
+                    </padding>
+                </VBox>
+            </ScrollPane>
+            
+            <VBox fx:id="replyBox" visible="false" managed="false" styleClass="reply-box">
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <Label text="Replying to:" style="-fx-font-weight: bold;"/>
+                    <Label fx:id="replyContentLabel" HBox.hgrow="ALWAYS" wrapText="true" textFill="#555555" />
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Button text="X" onAction="#onCancelReply" styleClass="cancel-reply-btn"/>
+                </HBox>
+            </VBox>
+
+            <HBox spacing="10" alignment="CENTER" styleClass="input-area">
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+                <Button fx:id="attachBtn" text="📎" onAction="#onAttachAction" styleClass="attach-btn"/>
+                <TextField fx:id="messageField" HBox.hgrow="ALWAYS" promptText="Type a message..." styleClass="msg-input" onAction="#onSendAction"/>
+                <Button fx:id="sendBtn" text="Send" onAction="#onSendAction" styleClass="send-btn"/>
+            </HBox>
+        </VBox>
+    </center>
+
+    <right>
+        <VBox prefWidth="250" styleClass="right-panel">
+            <HBox alignment="CENTER" styleClass="user-header">
+                <Label fx:id="currentUserLabel" text="USER NAME" styleClass="user-name-label"/>
+            </HBox>
+            <TextField promptText="Search (Ctrl+K)" styleClass="search-bar">
+                <VBox.margin>
+                    <Insets top="10" right="15" bottom="10" left="15"/>
+                </VBox.margin>
+            </TextField>
+            <ListView fx:id="usersListView" VBox.vgrow="ALWAYS" styleClass="user-list"/>
+        </VBox>
+    </right>
+
+</BorderPane>
